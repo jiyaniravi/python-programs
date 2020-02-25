@@ -20,3 +20,14 @@ else:
     print('No exception occured !')
 
 print('###########################################################')
+
+def squareNumber():
+    while True:
+        try:
+            number = int(input('Input an integer : '))
+            print('Thank you, your number squared is : '+str(number**2));
+            break
+        except ValueError:
+            print('An error occured! Please try again.')
+
+squareNumber()
