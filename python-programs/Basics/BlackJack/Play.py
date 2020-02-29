@@ -4,6 +4,7 @@ from Deck import Deck
 from Hand import Hand
 from Chips import Chips
 
+
 while True:
     print('Welcome to black jack !')
 
@@ -24,6 +25,7 @@ while True:
     
     show_some(player_hand, dealer_hand)
 
+    global playing
     while playing:
         hit_or_stand(deck, player_hand)
         show_some(player_hand, dealer_hand)
@@ -32,9 +34,9 @@ while True:
             player_busts(player_chips)
             break
         
-        if player_hand.value <= 21:
-            while dealer_hand.value < player_hand.value:
-                hit(deck, dealer_hand)
+    if player_hand.value <= 21:
+        while dealer_hand.value < player_hand.value:
+            hit(deck, dealer_hand)
 
         show_all(player_hand, dealer_hand)
 
@@ -51,7 +53,7 @@ while True:
     print('\n')
     new_game = input('Do you want to play game again ? Press y or n : ')
     if new_game[0].lower() == 'y':
-        plaing = True
+        playing = True
         continue
     else:
         print('Thanks for playing !')
