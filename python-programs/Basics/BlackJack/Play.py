@@ -1,3 +1,4 @@
+from Global.globals import playing
 from CommonFuncs import *
 from Deck import Deck
 from Hand import Hand
@@ -46,7 +47,7 @@ while True:
         else:
             push()
 
-    print('\n Player total chips : {}'.format(player_chips))
+    print('\n Player total chips : {}'.format(player_chips.total))
     print('\n')
     new_game = input('Do you want to play game again ? Press y or n : ')
     if new_game[0].lower() == 'y':
@@ -55,9 +56,3 @@ while True:
     else:
         print('Thanks for playing !')
         break
-
-
-
-
-
-

@@ -1,3 +1,4 @@
+from Global.globals import playing
 from Chips import Chips
 from Deck import Deck
 from Hand import Hand
@@ -23,14 +24,16 @@ def hit_or_stand(deck, hand):
     global playing
 
     while True:
-        x= input('Hit or Stand? Enter h or s')
+        x= input('Hit or Stand? Enter h or s : ')
         if x[0].lower() == 'h':
             hit(deck, hand)
         elif x[0].lower() == 's':
             print('Players stand dealrs turn')
             playing = False
         else:
-            print('Sorry I did not understand input : Enter h or s')
+            print('Sorry I did not understand input : Enter h or s : ')
+            continue
+        break
 
 def player_busts(chips):
     print('Player Busted !')
