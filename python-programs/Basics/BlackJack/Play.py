@@ -1,4 +1,4 @@
-from Global.globals import playing
+from Global import globals
 from CommonFuncs import *
 from Deck import Deck
 from Hand import Hand
@@ -25,8 +25,7 @@ while True:
     
     show_some(player_hand, dealer_hand)
 
-    global playing
-    while playing:
+    while globals.playing:
         hit_or_stand(deck, player_hand)
         show_some(player_hand, dealer_hand)
 
@@ -53,7 +52,7 @@ while True:
     print('\n')
     new_game = input('Do you want to play game again ? Press y or n : ')
     if new_game[0].lower() == 'y':
-        playing = True
+        globals.playing = True
         continue
     else:
         print('Thanks for playing !')
