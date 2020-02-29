@@ -3,7 +3,7 @@ import random
 from Global import globals
 from Card import Card
 
-class Dack():
+class Deck():
 
     def __init__(self):
         self.deck = []
@@ -23,6 +23,6 @@ class Dack():
     def deal(self):
         return self.deck.pop()
 
-test_dack = Dack()
+test_dack = Deck()
 test_dack.shuffle()
 print(test_dack)
