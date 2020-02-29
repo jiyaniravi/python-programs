@@ -24,4 +24,5 @@ class Dack():
         return self.deck.pop()
 
 test_dack = Dack()
+test_dack.shuffle()
 print(test_dack)
