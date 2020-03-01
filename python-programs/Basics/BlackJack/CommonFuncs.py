@@ -39,15 +39,15 @@ def player_busts(chips):
 
 def player_wins(chips):
     print('Player Won !')
-    chips.add_bet()
+    chips.win_bet()
 
 def dealer_busts(chips):
     print('Dealer Busted !')
-    chips.add_bet()
+    chips.win_bet()
 
 def dealer_wins(chips):
     print('Dealer Won !')
-    chips.win_bet()
+    chips.lose_bet()
 
 def push():
     print('Dealer and Player Tie ! PUSH !')
