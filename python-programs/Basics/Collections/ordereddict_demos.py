@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 my_normal_dict = {}
 my_normal_dict['a']=1
 my_normal_dict['b']=2
@@ -15,3 +17,20 @@ my_normal_dict['j']=10
 for k,v in my_normal_dict.items():
     print (k,v)
 
+d1 = {}
+d1['a'] = 1
+d1['b'] = 2
+
+d2 = {}
+d2['b'] = 2
+d2['a'] = 1
+print(d1 == d2)
+    
+d1 = OrderedDict()
+d1['a'] = 1
+d1['b'] = 2
+
+d2 = OrderedDict()
+d2['b'] = 2
+d2['a'] = 1
+print(d1 == d2)
