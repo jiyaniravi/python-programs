@@ -18,9 +18,8 @@ def with_generator():
     print('Time taken by generator : '+str(finish_1-start_1))
 
 def without_generator():
-   
+    start_2 = datetime.datetime.now()
     def normal_create_cube(n):
-        start_2 = datetime.datetime.now()
         arr = []
         for x in range(0, n):
             arr.append(x+3)
