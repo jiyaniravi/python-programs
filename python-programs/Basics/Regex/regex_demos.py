@@ -20,3 +20,12 @@ print(match.end())
 split_term = '@'
 phrase = 'What is your email, It is jiya10101@gmail.com'
 print(re.split(split_term, phrase))
+
+
+def multi_re_find(patterns, phrase):
+    for pattern in patterns:
+        print ('Searching the phrase using the re check')
+        print (re.findall(pattern, phrase))
+        print ('\n')
+
+multi_re_find(["[a-zA-Z]+"], "This is an example sentence. Lets see if we can find some letters.")
