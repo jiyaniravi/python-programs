@@ -2,12 +2,12 @@ import re
 
 def isPhoneNumber(number):
     #pattern = re.compile(r'\d\d\d-\d\d\d-\d\d\d',)
-    pattern = re.compile(r'[0-9]{3}-[0-9]{3}-[0-9]{4}',)
+    pattern = re.compile(r'[0-9]{3}-[0-9]{3}-[0-9]{4}')
     match = pattern.search(number)
     print(match.group())
 
 def searchPhoneNumbers(message):
-    pattern = re.compile(r'[0-9]{3}-[0-9]{3}-[0-9]{4}',)
+    pattern = re.compile(r'[0-9]{3}-[0-9]{3}-[0-9]{4}')
     return pattern.findall(message)
 
 isPhoneNumber('123-115-1151')
