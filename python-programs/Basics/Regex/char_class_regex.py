@@ -21,3 +21,21 @@ Three French hens, two turtle doves'''
 pattern = re.compile(r'\d+\s\w+')
 
 print(pattern.findall(my_lyrics))
+
+pattern = re.compile(r'.at')
+print(pattern.findall('The cat in the hat sat in the flat mat'))
+
+pattern = re.compile(r'First name : (.*) Last name : (.*)')
+print(pattern.findall('First name : Ravi Last name : Jiyani'))
+
+serve = "<To serve humans> for dinner >"
+pattern = re.compile(r'<(.*?)>')
+print(pattern.findall(serve))
+
+prime = "Serve the public trust.\n Protect the innocent.\n Upload the law."
+print(prime)
+dotStar = re.compile(r'.*')
+print(dotStar.search(prime))
+
+dotStar = re.compile(r'.*', re.DOTALL)
+print(dotStar.search(prime))
