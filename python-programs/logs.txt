@@ -1,0 +1,10 @@
+2020-03-12 06:08:23,510 - DEBUG - This is debug log
+2020-03-12 06:08:23,510 - INFO - This is info log
+2020-03-12 06:08:23,510 - WARNING - This is warn log
+2020-03-12 06:08:23,510 - ERROR - This is error log
+2020-03-12 06:08:23,510 - CRITICAL - This is critical log
+2020-03-12 06:09:21,178 - DEBUG - This is debug log
+2020-03-12 06:09:21,178 - INFO - This is info log
+2020-03-12 06:09:21,178 - WARNING - This is warn log
+2020-03-12 06:09:21,179 - ERROR - This is error log
+2020-03-12 06:09:21,179 - CRITICAL - This is critical log
